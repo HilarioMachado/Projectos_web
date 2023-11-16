@@ -6,8 +6,15 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(../imagens/Back/inteligencia-artificial-musica.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .caixa{
-    border-radius: 2px;
+    border-radius: 5px;
     box-shadow: 1px 2px 3.5px 2px rgba(0, 0, 0, 0.624);
     border: 0px;
 }
@@ -17,17 +24,22 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #001757;
 
     margin: auto;
     width: 90vw;
-    height: 10vh;
+    height: 12vh;
 }
 #cabecalho > #logo{
     flex: 1 1 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:  #001757;
+}
+#cabecalho > #logo > img{
+    width: 120px;
+    height: 78px;
 }
 
 #cabecalho > #menu{
@@ -42,6 +54,7 @@
     color: unset;
     margin: 1px;
     padding: 5px;
+    color:  #001757;
 }
 
 #corpo{
@@ -50,12 +63,54 @@
     align-items: center;
     flex-wrap: wrap;
 
-    height: 75vh;
+    height: 73vh;
 }
 
-#corpo > #musica{
+#corpo > #playlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 80%;
     width: 60%;
+}
+
+#track{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#imagem{
+    width: 65%;
+    height: 95%;
+    background: url(../imagens/track/watch-the-kid-laroi-thousand-mil-1280x720.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 85%;
+    border-radius: 5px;
+
+}
+
+#recuar{
+    
+}
+
+#avancar{
+    
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    width: 75px;
+    height: 90%;
+
+    border-radius: 5px;
 }
 
 #rodape{
